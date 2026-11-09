@@ -17,28 +17,24 @@ person and the normal third-person camera.
 
 Built for game build 26162923 (Unreal Engine 5.6) with UE4SS v3.0.1-1217.
 
+## Requirements
+
+- [UE4SS for RuneScape: Dragonwilds](https://github.com/MichaelRyan2319/RSDragonwilds-UE4SS).
+  Any other UE4SS v3 install works too.
+
 ## Install
 
-Download `FirstPersonIndoors-with-UE4SS.zip` from the [Releases](../../releases)
-page. It includes UE4SS.
-
-1. Find the game's Win64 folder. In Steam, right-click RuneScape: Dragonwilds >
-   Manage > Browse local files, then open `RSDragonwilds\Binaries\Win64` (the
-   folder with `RSDragonwilds-Win64-Shipping.exe` in it).
-2. Extract everything into the Win64 folder, so `dwmapi.dll` and the `ue4ss`
-   folder sit next to the .exe.
+1. Install UE4SS (see Requirements).
+2. Download `FirstPersonIndoors.zip` from the [Releases](../../releases) page.
+   Extract it into the game's Win64 folder, the same folder you put UE4SS in. In
+   Steam, right-click RuneScape: Dragonwilds > Manage > Browse local files, then
+   open `RSDragonwilds\Binaries\Win64`. The mod ends up in
+   `ue4ss\Mods\FirstPersonIndoors`.
 3. Start the game and press Z in-game.
 
-If your antivirus deletes or blocks `dwmapi.dll`, allow it. UE4SS loads into the
-game through that file, and antivirus tools sometimes flag it for that reason.
-
-**Already use UE4SS?** Skip the release. Copy the `FirstPersonIndoors` folder
-from this repo into `Win64\ue4ss\Mods\` and add this line to
-`Win64\ue4ss\Mods\mods.txt`:
-
-```
-FirstPersonIndoors : 1
-```
+The mod folder contains `enabled.txt`, so UE4SS loads it without any change to
+`mods.txt`. To install from this repo instead of a release, copy the
+`FirstPersonIndoors` folder into `Win64\ue4ss\Mods\`.
 
 ## Settings
 
@@ -96,10 +92,10 @@ detail.
 
 ## Uninstall
 
-Delete `dwmapi.dll` and the `ue4ss` folder from Win64. If you use UE4SS for other
-mods, delete only `ue4ss\Mods\FirstPersonIndoors` and its line in `mods.txt`.
+Delete `Win64\ue4ss\Mods\FirstPersonIndoors`. To remove UE4SS as well, delete
+`dwmapi.dll` and the `ue4ss` folder from Win64.
 
 ## Credits
 
 UE4SS is made by the UE4SS team ([RE-UE4SS](https://github.com/UE4SS-RE/RE-UE4SS),
-MIT licence). The with-UE4SS release zip includes it, along with its licence.
+MIT licence).
