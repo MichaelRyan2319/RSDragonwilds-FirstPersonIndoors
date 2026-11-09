@@ -22,14 +22,27 @@ Built for game build 26162923 (Unreal Engine 5.6) with UE4SS v3.0.1-1217.
 - [UE4SS for RuneScape: Dragonwilds](https://github.com/MichaelRyan2319/RSDragonwilds-UE4SS).
   Any other UE4SS v3 install works too.
 
-## Install
+## Install with Mod Loader
+
+[Mod Loader](https://github.com/MichaelRyan2319/ModLoader) installs the mod and
+keeps it up to date.
+
+1. **Add game** and pick RuneScape: Dragonwilds. Mod Loader 1.0.1 or later sets
+   the mods folder to the game's inner `RSDragonwilds` folder (the one with
+   `Binaries` and `Content` in it). If you added the game with an older version,
+   edit it and choose that folder.
+2. **Add mod** `MichaelRyan2319/RSDragonwilds-UE4SS`, then
+   `MichaelRyan2319/RSDragonwilds-FirstPersonIndoors`.
+3. Start the game and press Z in-game.
+
+## Install by hand
 
 1. Install UE4SS (see Requirements).
 2. Download `FirstPersonIndoors.zip` from the [Releases](../../releases) page.
-   Extract it into the game's Win64 folder, the same folder you put UE4SS in. In
-   Steam, right-click RuneScape: Dragonwilds > Manage > Browse local files, then
-   open `RSDragonwilds\Binaries\Win64`. The mod ends up in
-   `ue4ss\Mods\FirstPersonIndoors`.
+   In Steam, right-click RuneScape: Dragonwilds > Manage > Browse local files,
+   then open the `RSDragonwilds` folder (the one with `Binaries` and `Content`
+   in it) and extract the zip there. The mod ends up in
+   `Binaries\Win64\ue4ss\Mods\FirstPersonIndoors`.
 3. Start the game and press Z in-game.
 
 The mod folder contains `enabled.txt`, so UE4SS loads it without any change to
