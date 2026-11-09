@@ -31,8 +31,10 @@ keeps it up to date.
    the mods folder to the game's inner `RSDragonwilds` folder (the one with
    `Binaries` and `Content` in it). If you added the game with an older version,
    edit it and choose that folder.
-2. **Add mod** `MichaelRyan2319/RSDragonwilds-UE4SS`, then
-   `MichaelRyan2319/RSDragonwilds-FirstPersonIndoors`.
+2. **Add mod** `MichaelRyan2319/RSDragonwilds-FirstPersonIndoors`. The mod needs
+   UE4SS, so Mod Loader 1.1.0 or later offers to add
+   `MichaelRyan2319/RSDragonwilds-UE4SS` as well; click **Yes**. With an older
+   Mod Loader, add `MichaelRyan2319/RSDragonwilds-UE4SS` yourself first.
 3. Start the game and press Z in-game.
 
 ## Install by hand
