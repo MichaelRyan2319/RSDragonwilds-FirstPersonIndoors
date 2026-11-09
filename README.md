@@ -19,29 +19,26 @@ Built for game build 26162923 (Unreal Engine 5.6) with UE4SS v3.0.1-1217.
 
 ## Install
 
-Download a zip from the [Releases](../../releases) page.
+Download `FirstPersonIndoors-with-UE4SS.zip` from the [Releases](../../releases)
+page. It includes UE4SS.
 
 1. Find the game's Win64 folder. In Steam, right-click RuneScape: Dragonwilds >
    Manage > Browse local files, then open `RSDragonwilds\Binaries\Win64` (the
    folder with `RSDragonwilds-Win64-Shipping.exe` in it).
-2. If you **don't** have UE4SS yet, use `FirstPersonIndoors-with-UE4SS.zip`.
-   Extract everything into the Win64 folder, so `dwmapi.dll` and the `ue4ss`
+2. Extract everything into the Win64 folder, so `dwmapi.dll` and the `ue4ss`
    folder sit next to the .exe.
-
-   If you **already** use UE4SS, use `FirstPersonIndoors-mod-only.zip`. Put the
-   `FirstPersonIndoors` folder in `Win64\ue4ss\Mods\` and add this line to
-   `Win64\ue4ss\Mods\mods.txt`:
-
-   ```
-   FirstPersonIndoors : 1
-   ```
 3. Start the game and press Z in-game.
 
 If your antivirus deletes or blocks `dwmapi.dll`, allow it. UE4SS loads into the
 game through that file, and antivirus tools sometimes flag it for that reason.
 
-To install from this repo instead of a release, copy the `FirstPersonIndoors`
-folder into `Win64\ue4ss\Mods\` and add the `mods.txt` line above.
+**Already use UE4SS?** Skip the release. Copy the `FirstPersonIndoors` folder
+from this repo into `Win64\ue4ss\Mods\` and add this line to
+`Win64\ue4ss\Mods\mods.txt`:
+
+```
+FirstPersonIndoors : 1
+```
 
 ## Settings
 
